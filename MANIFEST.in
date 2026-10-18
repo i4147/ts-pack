@@ -1,0 +1,3 @@
+include csrc/stub.c
+graft vendor
+global-exclude __pycache__ *.pyc

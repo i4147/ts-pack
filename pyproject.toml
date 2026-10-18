@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tspack"
+version = "0.1.0"
+description = "Merged tree-sitter language pack (one .so for many grammars)"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+dependencies = ["tree-sitter>=0.22.0"]
+
+
+[tool.setuptools.package-data]
+tspack = ["*.so", "*.pyd", "*.dylib", "py.typed"]
